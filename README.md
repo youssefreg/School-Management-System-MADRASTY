@@ -1,34 +1,110 @@
-# School-Management-System-Angular4-SpringBoot-Hibernate
-Angular4 and spring Boot based application for school management
+# School-Management-System-MADRASTY
 
+![Logo](images/logo.png)
 
-# SchoolManagementSystem
+Bienvenue sur le projet "School-Management-System-MADRASTY" ! Ce projet est une application de gestion scolaire développée avec Spring Boot pour le backend et Angular pour le frontend.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
+## Table des matières
 
-## Development server
+- [Introduction](#introduction)
+- [Fonctionnalités](#fonctionnalités)
+- [Prérequis](#prérequis)
+- [Installation](#installation)
+- [Utilisation](#utilisation)
+- [Contribuer](#contribuer)
+- [Licence](#licence)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Introduction
 
-## Code scaffolding
+"**School-Management-System-MADRASTY**" est une plateforme de gestion scolaire conçue pour faciliter la gestion des établissements scolaires. Ce projet utilise **Spring Boot** pour la partie serveur et **Angular** pour la partie cliente.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Fonctionnalités
 
-## Build
+- Gestion des étudiants (inscription, mise à jour, suppression)
+- Gestion des enseignants
+- Gestion des cours et des emplois du temps
+- Gestion des notes et des évaluations
+- Interface d'administration pour gérer les utilisateurs et les permissions
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Prérequis
 
-## Running unit tests
+Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [Node.js](https://nodejs.org/) (version 12+)
+- [Angular CLI](https://angular.io/cli)
+- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) (version 11+)
+- [Maven](https://maven.apache.org/) (version 3.6+)
+- [MySQL](https://www.mysql.com/) (ou toute autre base de données relationnelle)
 
-## Running end-to-end tests
+## Installation
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Backend (Spring Boot)
 
-## Further help
+1. Clonez le dépôt :
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    ```bash
+    git clone https://github.com/votre_nom_d_utilisateur/School-Management-System-MADRASTY.git
+    ```
 
+2. Accédez au répertoire backend :
 
+    ```bash
+    cd School-Management-System-MADRASTY/backend
+    ```
 
+3. Configurez la base de données MySQL dans `src/main/resources/application.properties` :
+
+    ```properties
+    spring.datasource.url=jdbc:mysql://localhost:3306/votre_base_de_données
+    spring.datasource.username=votre_nom_d_utilisateur
+    spring.datasource.password=votre_mot_de_passe
+    ```
+
+4. Compilez et démarrez le serveur :
+
+    ```bash
+    mvn clean install
+    mvn spring-boot:run
+    ```
+
+### Frontend (Angular)
+
+1. Accédez au répertoire frontend :
+
+    ```bash
+    cd ../frontend
+    ```
+
+2. Installez les dépendances :
+
+    ```bash
+    npm install
+    ```
+
+3. Démarrez l'application Angular :
+
+    ```bash
+    ng serve
+    ```
+
+4. Ouvrez votre navigateur et accédez à `http://localhost:4200`.
+
+## Utilisation
+
+1. Accédez à l'interface utilisateur via votre navigateur à `http://localhost:4200`.
+2. Inscrivez-vous ou connectez-vous pour commencer à utiliser l'application.
+3. Utilisez les différentes fonctionnalités pour gérer les étudiants, les enseignants, les cours, etc.
+
+## Contribuer
+
+Les contributions sont les bienvenues ! Veuillez suivre les étapes suivantes pour contribuer :
+
+1. Forkez le projet.
+2. Créez votre branche de fonctionnalité (`git checkout -b fonctionnalité/AmazingFeature`).
+3. Commitez vos modifications (`git commit -m 'Ajoutez une fonctionnalité incroyable'`).
+4. Poussez à la branche (`git push origin fonctionnalité/AmazingFeature`).
+5. Ouvrez une Pull Request.
+
+## Licence
+
+Distribué sous la licence MIT. Voir `LICENSE` pour plus d'informations.
