@@ -1,6 +1,7 @@
 # School-Management-System-MADRASTY
+![school](https://github.com/youssefreg/School-Management-System-MADRASTY/assets/112189559/9d2ca45f-4dd0-4441-920a-14d68342788a)
 
-![Logo](images/logo.png)
+
 
 Bienvenue sur le projet "School-Management-System-MADRASTY" ! Ce projet est une application de gestion scolaire développée avec Spring Boot pour le backend et Angular pour le frontend.
 
